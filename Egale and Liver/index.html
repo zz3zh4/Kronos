@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>鹰与肝脏</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="outerContainer">
+        <h3 class="written-in-ink"><a href="https://space.bilibili.com/4061685">WRITTEN BY Kronos</a></h3>
+
+        <div id="controls" class="buttons">
+          <a id="rewind" title="重置故事进度">从头开始</a>
+          <a id="save" title="保存故事进度">保存存档</a>
+          <a id="reload" title="加载故事进度">加载存档</a>
+          <a id="theme-switch" title="切换日间/夜间模式">日间/夜间模式</a>
+        </div>
+
+        <div id="story" class="container">
+            <div class="header">
+                <h1>鹰与肝脏</h1>
+                <h2 class="byline"></h2>
+            </div>
+        </div>
+    </div>
+    <div id="gitalk-container" class="gitalk">
+        <script type="text/javascript">
+        var gitalk = new Gitalk({
+            clientID: '83d2122275f416fe758d',// GitHub Application Client ID
+            clientSecret: '763de0d519b1173786d25956346052b08d5d6e55',// GitHub Application Client Secret
+            repo: 'Kronos', // 存放评论的仓库
+            owner: 'zz3zh4',// 仓库的创建者，
+            admin: ['zz3zh4'], // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+            id: location.pathname,       // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+          })
+          
+          gitalk.render('gitalk-container')
+        </script>
+    </div>
+    <div class="foot">
+            <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md" target="_blank" style="text-decoration:none;">【向下滚动看评论】查看 Gitalk 文档</a>
+            
+        
+    </div>
+
+    <script src="ink.js"></script>
+    <script src="鹰与肝脏.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
