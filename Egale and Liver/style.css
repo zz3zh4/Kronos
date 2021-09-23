@@ -4,7 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     background: white;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body.switched {
@@ -265,4 +265,29 @@ body.dark {
 	text-align:center;
     color:brown;
     font-weight:bold;
+}
+.foot {
+    width:100%; 
+    height:36px; 
+    line-height:1.7em;  
+    position:fixed; 
+    bottom:0px; 
+    left:0px; 
+    text-align:center;
+    color:#515C6B;
+    background:#FFFEFA;
+}
+
+.foot a {
+    color:#515C6B;
+}
+
+.gitalk {
+    width:80%; 
+    height:100%; 
+    margin: 0 auto;
+    position:absolute; 
+    top:100%; 
+    left:50%;
+    transform: translateX(-50%);
 }
